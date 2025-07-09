@@ -22,9 +22,14 @@ BubbleChart(files, {
 })
 )}
 
-function _flare(FileAttachment){return(
-FileAttachment("flare.csv").csv({typed: true})
-)}
+function _flare(){
+  return [
+    { name: "Gift A", value: 120 },
+    { name: "Gift B", value: 80 },
+    { name: "Gift C", value: 200 },
+    { name: "Gift D", value: 60 }
+  ];
+}
 
 function _files(flare){return(
 flare.filter(d => d.value !== null)
